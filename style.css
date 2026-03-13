@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* 1. GLOBAL & TYPOGRAPHY */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111; 
+    color: #e0e0e0; 
+    font-family: 'EB Garamond', Palatino, "Book Antiqua", Georgia, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: normal; 
+}
+
+h1 {
+    font-size: 3rem; 
+}
+
+h2 {
+    font-size: 2.2rem; 
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem; 
+    margin-bottom: 2rem;
+    line-height: 1.8; 
+}
+
+a {
+    color: #66b2ff; 
+}
+
+header {
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto 3rem auto;
+}
+
+/* 2. SCROLLYTELLING LAYOUT */
+.scrolly-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.prose-column {
+    width: 45%;
+    padding-right: 40px;
+}
+
+.step {
+    min-height: 60vh;
+    margin-bottom: 30vh; 
+}
+
+.viz-column {
+    width: 50%;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 20px; 
+    height: 95vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.viz-container {
+    background: transparent; 
+}
+
+/* Scene 1: Two charts share the screen */
+.double-viz .viz-container {
+    width: 100%;
+    height: 45%; 
+    position: relative;
+    margin: 0;
+}
+
+/* Scene 2: One chart takes up most of the screen */
+.single-viz .viz-container {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    margin: 0;
+}
+
+.viz-container svg {
+    width: 100%;
+    height: 100%; 
+    display: block;
+}
+
+/* 3. D3 STYLING OVERRIDES & TOOLTIP */
+.viz-container svg text {
+    fill: #e0e0e0 !important; 
+    font-family: 'EB Garamond', Palatino, Georgia, serif !important;
+    font-size: 14px; 
+}
+
+.viz-container svg path.domain,
+.viz-container svg line {
+    stroke: #e0e0e0 !important; 
+}
+
+.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+    background-color: #222222; 
+    color: #ffffff; 
+    border: 1px solid #555555;
+    border-radius: 6px;
+    pointer-events: none; 
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.8);
+    font-family: inherit;
+    line-height: 1.5;
+    z-index: 100;
+}

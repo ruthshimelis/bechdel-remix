@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bechdel Remix: A Data Remix</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Beyond the Pass/Fail: Re-evaluating the Bechdel Test in Hollywood</h1>
+        <p>By Ruth Shimelis | Based on data from <a href="https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/" target="_blank">FiveThirtyEight</a></p>
+    </header>
+
+    <main>
+        <div class="scrolly-container">
+            <div class="prose-column">
+                <section class="step">
+                    <p>The Bechdel Test was never meant to be the ultimate metric of feminism in film. It started as a joke in a 1985 comic strip, setting an incredibly low bar: a movie simply needs to feature two named women who talk to each other about something other than a man.</p>
+                    <p><em>Original data sourced from FiveThirtyEight's <a href="https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/" target="_blank">"The Dollar-And-Cents Case Against Hollywood’s Exclusion of Women."</a></em></p>
+                    <p>While previous analyses have shown that movies passing the test actually yield a higher return on investment, simply looking at "Pass/Fail" ratios obscures a stark reality. When we map out international gross revenue against film budgets, a dense cluster of red "Fail" dots dominates the landscape—especially among the highest-budget blockbusters. The industry is still heavily funding movies that completely sideline female characters.</p>
+                </section>
+
+                <section class="step">
+                    <h2>Failing the Bare Minimum</h2>
+                    <p>When we hear a movie failed the Bechdel Test, it’s easy to assume it just barely missed the mark. Maybe the female characters shared a scene but only talked about the male lead. But when you actually break down the numbers, the reality is honestly kind of wild. A massive chunk of these multimillion-dollar projects fall into the "notalk" or "nowomen" categories.</p> 
+                    <p>Think about what that actually means: major studios are greenlighting movies with budgets reaching hundreds of millions of dollars, and the writers literally couldn't be bothered to put two named women in the script. Or, if they did, they never let them interact on screen. These movies aren't just fumbling complex feminist representation; they are actively operating in a fictional universe where women basically don't exist.</p>
+                </section>
+            </div>
+
+            <div class="viz-column double-viz">
+                <div id="viz1-scatter" class="viz-container"></div>
+                <div id="viz2-bar" class="viz-container"></div>
+            </div>
+        </div>
+
+        <div class="scrolly-container">
+            <div class="prose-column">
+                <section class="step">
+                    <h2>Are We Getting Better?</h2>
+                    <p>It is easy to assume that the severe lack of female representation is a relic of older decades and that modern Hollywood has corrected its course. However, tracking the historical pass rate reveals a highly volatile trend. While there is a general upward trajectory, progress is slow, inconsistent, and frequently dips back down, proving that passing this incredibly low bar is still not an industry standard.</p>
+                </section>
+
+                <section class="step">
+                    <h2>The Floor, Not the Ceiling</h2>
+                    <p>At the end of the day, the original FiveThirtyEight data proved something important: movies that pass the Bechdel Test actually make a higher return on investment. You would think that kind of financial incentive would permanently change how Hollywood operates. Yet, as the historical trend line shows, progress is frustratingly slow and constantly dips back down.</p>
+                    <p>The main takeaway from this data isn't just that the industry is still struggling with representation. It’s that passing the Bechdel Test shouldn't be treated like a progressive achievement that deserves a gold star. It’s the absolute bare minimum. It is the floor, not the ceiling. Until Hollywood realizes that including women in their narratives isn't just a diversity initiative, but a basic reflection of reality that also drives box office success, we are going to keep seeing a lot of red dots on the scatterplot.</p>
+                </section>
+            </div>
+
+            <div class="viz-column single-viz">
+                <div id="viz3-trend" class="viz-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
