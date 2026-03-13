@@ -1,7 +1,7 @@
 # Beyond the Pass/Fail: Re-evaluating the Bechdel Test
 
 **Author:** Ruth Shimelis
-**Live Story Link:** [Insert your GitHub Pages link here once deployed]
+**Live Story Link:** https://ruthshimelis.github.io/bechdel-remix/
 
 ## 1. Story and Data Sources
 * **Original Story:** ["The Dollar-And-Cents Case Against Hollywood’s Exclusion of Women"](https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/) by FiveThirtyEight.
